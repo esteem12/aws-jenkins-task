@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sshagent(['sshprv']) {
+                    sshagent(['gituserwithprv']) {
                         sh "scp -r . ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}"
                         sh "ssh ${REMOTE_USER}@${REMOTE_HOST} 'cd ${REMOTE_DIR} && nohup python3 app.py > /dev/null 2>&1 &'"
                     }
