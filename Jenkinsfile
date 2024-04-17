@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         REMOTE_USER = 'ec2-user'
-        REMOTE_HOST = '3.17.69.129'
+        REMOTE_HOST = '3.14.82.119'
         REMOTE_DIR = 'aws-jenkins-task'
     }
 
