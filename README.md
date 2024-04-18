@@ -1,6 +1,4 @@
-# aws-jenkins-task
-
-# CI/CD Pipeline for Web Application
+# CI/CD Pipeline for Web Application Using Jenkins
 
 This repository contains the source code and configuration for setting up a CI/CD pipeline for a web application using Jenkins and Git.
 
