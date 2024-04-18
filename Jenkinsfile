@@ -15,7 +15,7 @@ pipeline {
         stage('Unit Test') {
             steps {
                 sh 'echo "Running unit tests"'
-                sh 'python -m unittest discover'
+                sh 'python3 -m unittest discover'
             }
         }
         stage('Deploy to Test Environment') {
