@@ -8,9 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "pwd"
-                sh "ls -la"
-                sh "cd aws-jenkins-task"
+                sh "nohup python3 app.py > /dev/null 2>&1 &"
             }
         }        
        
